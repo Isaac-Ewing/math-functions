@@ -86,7 +86,6 @@ export function sumArrayWithThreeNumbers(sumArr) {
     string = string.substring(0, string.length - 1);
     string = string + ' ';
     string = string + `was passed in as an array of numbers, and ${total} is their sum.`;
-    console.log(total);
     return ([total, string]);
 }
 
@@ -119,8 +118,7 @@ export function multiplyArrayWithThreeNumbers(multArr) { //eslint-disable-line
         string = string + j + ',';
     }
     string = string.substring(0, string.length - 1);
-    string = string + ' ';
-    string = string + `have a product of ${total}.`;
+    string = ' ' + string + `have a product of ${total}.`;
     return ([total, string]);
 }
 
